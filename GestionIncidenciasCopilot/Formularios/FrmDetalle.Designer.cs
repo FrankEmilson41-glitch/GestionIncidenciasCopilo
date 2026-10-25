@@ -41,8 +41,8 @@ namespace GestionIncidenciasCopilot.Formularios
         private void InitializeComponent()
         {
             this.panelEncabezado = new System.Windows.Forms.Panel();
-            this.labelEncabezado = new System.Windows.Forms.Label();
             this.labelSubtitulo = new System.Windows.Forms.Label();
+            this.labelEncabezado = new System.Windows.Forms.Label();
             this.panelContenido = new System.Windows.Forms.Panel();
             this.labelId = new System.Windows.Forms.Label();
             this.textId = new System.Windows.Forms.TextBox();
@@ -73,7 +73,7 @@ namespace GestionIncidenciasCopilot.Formularios
             // 
             // panelEncabezado
             // 
-            this.panelEncabezado.BackColor = System.Drawing.Color.FromArgb(31, 52, 77);
+            this.panelEncabezado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(52)))), ((int)(((byte)(77)))));
             this.panelEncabezado.Controls.Add(this.labelSubtitulo);
             this.panelEncabezado.Controls.Add(this.labelEncabezado);
             this.panelEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
@@ -83,6 +83,17 @@ namespace GestionIncidenciasCopilot.Formularios
             this.panelEncabezado.Size = new System.Drawing.Size(780, 112);
             this.panelEncabezado.TabIndex = 0;
             // 
+            // labelSubtitulo
+            // 
+            this.labelSubtitulo.AutoSize = true;
+            this.labelSubtitulo.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(230)))), ((int)(((byte)(241)))));
+            this.labelSubtitulo.Location = new System.Drawing.Point(31, 67);
+            this.labelSubtitulo.Name = "labelSubtitulo";
+            this.labelSubtitulo.Size = new System.Drawing.Size(389, 25);
+            this.labelSubtitulo.TabIndex = 1;
+            this.labelSubtitulo.Text = "Consulta la información y gestiona el estado.";
+            // 
             // labelEncabezado
             // 
             this.labelEncabezado.AutoSize = true;
@@ -90,23 +101,13 @@ namespace GestionIncidenciasCopilot.Formularios
             this.labelEncabezado.ForeColor = System.Drawing.Color.White;
             this.labelEncabezado.Location = new System.Drawing.Point(27, 17);
             this.labelEncabezado.Name = "labelEncabezado";
-            this.labelEncabezado.Size = new System.Drawing.Size(219, 36);
+            this.labelEncabezado.Size = new System.Drawing.Size(379, 51);
             this.labelEncabezado.TabIndex = 0;
             this.labelEncabezado.Text = "Detalle de incidencia";
             // 
-            // labelSubtitulo
-            // 
-            this.labelSubtitulo.AutoSize = true;
-            this.labelSubtitulo.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelSubtitulo.ForeColor = System.Drawing.Color.FromArgb(220, 230, 241);
-            this.labelSubtitulo.Location = new System.Drawing.Point(31, 67);
-            this.labelSubtitulo.Name = "labelSubtitulo";
-            this.labelSubtitulo.Size = new System.Drawing.Size(298, 17);
-            this.labelSubtitulo.TabIndex = 1;
-            this.labelSubtitulo.Text = "Consulta la información y gestiona el estado.";
-            // 
             // panelContenido
             // 
+            this.panelContenido.AutoScroll = true;
             this.panelContenido.BackColor = System.Drawing.Color.White;
             this.panelContenido.Controls.Add(this.labelId);
             this.panelContenido.Controls.Add(this.textId);
@@ -124,7 +125,6 @@ namespace GestionIncidenciasCopilot.Formularios
             this.panelContenido.Controls.Add(this.textFechaActualizacion);
             this.panelContenido.Controls.Add(this.grupoEstado);
             this.panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenido.AutoScroll = true;
             this.panelContenido.Location = new System.Drawing.Point(0, 112);
             this.panelContenido.Name = "panelContenido";
             this.panelContenido.Padding = new System.Windows.Forms.Padding(32, 24, 32, 18);
@@ -135,22 +135,23 @@ namespace GestionIncidenciasCopilot.Formularios
             // 
             this.labelId.AutoSize = true;
             this.labelId.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.labelId.ForeColor = System.Drawing.Color.FromArgb(45, 55, 72);
+            this.labelId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
             this.labelId.Location = new System.Drawing.Point(34, 19);
             this.labelId.Name = "labelId";
-            this.labelId.Size = new System.Drawing.Size(21, 19);
+            this.labelId.Size = new System.Drawing.Size(32, 28);
             this.labelId.TabIndex = 0;
             this.labelId.Text = "ID";
             // 
             // textId
             // 
-            this.textId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.textId.BackColor = System.Drawing.Color.FromArgb(243, 246, 249);
+            this.textId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.textId.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.textId.Location = new System.Drawing.Point(38, 43);
             this.textId.Name = "textId";
             this.textId.ReadOnly = true;
-            this.textId.Size = new System.Drawing.Size(704, 24);
+            this.textId.Size = new System.Drawing.Size(704, 33);
             this.textId.TabIndex = 1;
             this.textId.TabStop = false;
             // 
@@ -158,22 +159,23 @@ namespace GestionIncidenciasCopilot.Formularios
             // 
             this.labelTitulo.AutoSize = true;
             this.labelTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.labelTitulo.ForeColor = System.Drawing.Color.FromArgb(45, 55, 72);
+            this.labelTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
             this.labelTitulo.Location = new System.Drawing.Point(34, 78);
             this.labelTitulo.Name = "labelTitulo";
-            this.labelTitulo.Size = new System.Drawing.Size(47, 19);
+            this.labelTitulo.Size = new System.Drawing.Size(64, 28);
             this.labelTitulo.TabIndex = 2;
             this.labelTitulo.Text = "Título";
             // 
             // textTitulo
             // 
-            this.textTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.textTitulo.BackColor = System.Drawing.Color.FromArgb(243, 246, 249);
+            this.textTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.textTitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.textTitulo.Location = new System.Drawing.Point(38, 102);
             this.textTitulo.Name = "textTitulo";
             this.textTitulo.ReadOnly = true;
-            this.textTitulo.Size = new System.Drawing.Size(704, 25);
+            this.textTitulo.Size = new System.Drawing.Size(704, 34);
             this.textTitulo.TabIndex = 3;
             this.textTitulo.TabStop = false;
             // 
@@ -181,18 +183,19 @@ namespace GestionIncidenciasCopilot.Formularios
             // 
             this.labelDescripcion.AutoSize = true;
             this.labelDescripcion.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.labelDescripcion.ForeColor = System.Drawing.Color.FromArgb(45, 55, 72);
+            this.labelDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
             this.labelDescripcion.Location = new System.Drawing.Point(34, 138);
             this.labelDescripcion.Name = "labelDescripcion";
-            this.labelDescripcion.Size = new System.Drawing.Size(80, 19);
+            this.labelDescripcion.Size = new System.Drawing.Size(117, 28);
             this.labelDescripcion.TabIndex = 4;
             this.labelDescripcion.Text = "Descripción";
             // 
             // textDescripcion
             // 
             this.textDescripcion.AcceptsReturn = true;
-            this.textDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.textDescripcion.BackColor = System.Drawing.Color.FromArgb(243, 246, 249);
+            this.textDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.textDescripcion.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.textDescripcion.Location = new System.Drawing.Point(38, 162);
             this.textDescripcion.Multiline = true;
@@ -207,21 +210,21 @@ namespace GestionIncidenciasCopilot.Formularios
             // 
             this.labelPrioridad.AutoSize = true;
             this.labelPrioridad.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.labelPrioridad.ForeColor = System.Drawing.Color.FromArgb(45, 55, 72);
+            this.labelPrioridad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
             this.labelPrioridad.Location = new System.Drawing.Point(34, 261);
             this.labelPrioridad.Name = "labelPrioridad";
-            this.labelPrioridad.Size = new System.Drawing.Size(61, 19);
+            this.labelPrioridad.Size = new System.Drawing.Size(94, 28);
             this.labelPrioridad.TabIndex = 6;
             this.labelPrioridad.Text = "Prioridad";
             // 
             // textPrioridad
             // 
-            this.textPrioridad.BackColor = System.Drawing.Color.FromArgb(243, 246, 249);
+            this.textPrioridad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.textPrioridad.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.textPrioridad.Location = new System.Drawing.Point(38, 285);
             this.textPrioridad.Name = "textPrioridad";
             this.textPrioridad.ReadOnly = true;
-            this.textPrioridad.Size = new System.Drawing.Size(190, 24);
+            this.textPrioridad.Size = new System.Drawing.Size(190, 33);
             this.textPrioridad.TabIndex = 7;
             this.textPrioridad.TabStop = false;
             // 
@@ -229,21 +232,21 @@ namespace GestionIncidenciasCopilot.Formularios
             // 
             this.labelEstado.AutoSize = true;
             this.labelEstado.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.labelEstado.ForeColor = System.Drawing.Color.FromArgb(45, 55, 72);
+            this.labelEstado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
             this.labelEstado.Location = new System.Drawing.Point(270, 261);
             this.labelEstado.Name = "labelEstado";
-            this.labelEstado.Size = new System.Drawing.Size(50, 19);
+            this.labelEstado.Size = new System.Drawing.Size(72, 28);
             this.labelEstado.TabIndex = 8;
             this.labelEstado.Text = "Estado";
             // 
             // textEstado
             // 
-            this.textEstado.BackColor = System.Drawing.Color.FromArgb(243, 246, 249);
+            this.textEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.textEstado.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.textEstado.Location = new System.Drawing.Point(274, 285);
             this.textEstado.Name = "textEstado";
             this.textEstado.ReadOnly = true;
-            this.textEstado.Size = new System.Drawing.Size(190, 24);
+            this.textEstado.Size = new System.Drawing.Size(190, 33);
             this.textEstado.TabIndex = 9;
             this.textEstado.TabStop = false;
             // 
@@ -251,21 +254,21 @@ namespace GestionIncidenciasCopilot.Formularios
             // 
             this.labelFechaCreacion.AutoSize = true;
             this.labelFechaCreacion.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.labelFechaCreacion.ForeColor = System.Drawing.Color.FromArgb(45, 55, 72);
+            this.labelFechaCreacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
             this.labelFechaCreacion.Location = new System.Drawing.Point(34, 324);
             this.labelFechaCreacion.Name = "labelFechaCreacion";
-            this.labelFechaCreacion.Size = new System.Drawing.Size(104, 19);
+            this.labelFechaCreacion.Size = new System.Drawing.Size(145, 28);
             this.labelFechaCreacion.TabIndex = 10;
             this.labelFechaCreacion.Text = "Fecha creación";
             // 
             // textFechaCreacion
             // 
-            this.textFechaCreacion.BackColor = System.Drawing.Color.FromArgb(243, 246, 249);
+            this.textFechaCreacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.textFechaCreacion.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.textFechaCreacion.Location = new System.Drawing.Point(38, 348);
             this.textFechaCreacion.Name = "textFechaCreacion";
             this.textFechaCreacion.ReadOnly = true;
-            this.textFechaCreacion.Size = new System.Drawing.Size(300, 24);
+            this.textFechaCreacion.Size = new System.Drawing.Size(300, 33);
             this.textFechaCreacion.TabIndex = 11;
             this.textFechaCreacion.TabStop = false;
             // 
@@ -273,21 +276,21 @@ namespace GestionIncidenciasCopilot.Formularios
             // 
             this.labelFechaActualizacion.AutoSize = true;
             this.labelFechaActualizacion.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.labelFechaActualizacion.ForeColor = System.Drawing.Color.FromArgb(45, 55, 72);
+            this.labelFechaActualizacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
             this.labelFechaActualizacion.Location = new System.Drawing.Point(370, 324);
             this.labelFechaActualizacion.Name = "labelFechaActualizacion";
-            this.labelFechaActualizacion.Size = new System.Drawing.Size(143, 19);
+            this.labelFechaActualizacion.Size = new System.Drawing.Size(185, 28);
             this.labelFechaActualizacion.TabIndex = 12;
             this.labelFechaActualizacion.Text = "Fecha actualización";
             // 
             // textFechaActualizacion
             // 
-            this.textFechaActualizacion.BackColor = System.Drawing.Color.FromArgb(243, 246, 249);
+            this.textFechaActualizacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.textFechaActualizacion.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.textFechaActualizacion.Location = new System.Drawing.Point(374, 348);
             this.textFechaActualizacion.Name = "textFechaActualizacion";
             this.textFechaActualizacion.ReadOnly = true;
-            this.textFechaActualizacion.Size = new System.Drawing.Size(368, 24);
+            this.textFechaActualizacion.Size = new System.Drawing.Size(368, 33);
             this.textFechaActualizacion.TabIndex = 13;
             this.textFechaActualizacion.TabStop = false;
             // 
@@ -297,7 +300,7 @@ namespace GestionIncidenciasCopilot.Formularios
             this.grupoEstado.Controls.Add(this.comboDestino);
             this.grupoEstado.Controls.Add(this.botonCambiarEstado);
             this.grupoEstado.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
-            this.grupoEstado.ForeColor = System.Drawing.Color.FromArgb(45, 55, 72);
+            this.grupoEstado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
             this.grupoEstado.Location = new System.Drawing.Point(38, 388);
             this.grupoEstado.Name = "grupoEstado";
             this.grupoEstado.Padding = new System.Windows.Forms.Padding(14, 10, 14, 12);
@@ -312,7 +315,7 @@ namespace GestionIncidenciasCopilot.Formularios
             this.labelDestino.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.labelDestino.Location = new System.Drawing.Point(15, 34);
             this.labelDestino.Name = "labelDestino";
-            this.labelDestino.Size = new System.Drawing.Size(48, 15);
+            this.labelDestino.Size = new System.Drawing.Size(123, 25);
             this.labelDestino.TabIndex = 0;
             this.labelDestino.Text = "Nuevo estado";
             // 
@@ -323,12 +326,12 @@ namespace GestionIncidenciasCopilot.Formularios
             this.comboDestino.FormattingEnabled = true;
             this.comboDestino.Location = new System.Drawing.Point(100, 30);
             this.comboDestino.Name = "comboDestino";
-            this.comboDestino.Size = new System.Drawing.Size(220, 25);
+            this.comboDestino.Size = new System.Drawing.Size(220, 33);
             this.comboDestino.TabIndex = 1;
             // 
             // botonCambiarEstado
             // 
-            this.botonCambiarEstado.BackColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            this.botonCambiarEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
             this.botonCambiarEstado.FlatAppearance.BorderSize = 0;
             this.botonCambiarEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonCambiarEstado.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
@@ -343,11 +346,11 @@ namespace GestionIncidenciasCopilot.Formularios
             // 
             // panelBotones
             // 
-            this.panelBotones.BackColor = System.Drawing.Color.FromArgb(247, 249, 252);
+            this.panelBotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(249)))), ((int)(((byte)(252)))));
             this.panelBotones.Controls.Add(this.botonCerrar);
             this.panelBotones.Controls.Add(this.botonEditar);
             this.panelBotones.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBotones.Location = new System.Drawing.Point(0, 556);
+            this.panelBotones.Location = new System.Drawing.Point(0, 588);
             this.panelBotones.Name = "panelBotones";
             this.panelBotones.Padding = new System.Windows.Forms.Padding(24, 13, 30, 13);
             this.panelBotones.Size = new System.Drawing.Size(780, 72);
@@ -356,6 +359,7 @@ namespace GestionIncidenciasCopilot.Formularios
             // botonCerrar
             // 
             this.botonCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.botonCerrar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.botonCerrar.Location = new System.Drawing.Point(642, 15);
             this.botonCerrar.Name = "botonCerrar";
             this.botonCerrar.Size = new System.Drawing.Size(100, 40);
@@ -367,7 +371,7 @@ namespace GestionIncidenciasCopilot.Formularios
             // botonEditar
             // 
             this.botonEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.botonEditar.BackColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            this.botonEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
             this.botonEditar.FlatAppearance.BorderSize = 0;
             this.botonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonEditar.ForeColor = System.Drawing.Color.White;
@@ -381,7 +385,7 @@ namespace GestionIncidenciasCopilot.Formularios
             // 
             // FrmDetalle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.botonCerrar;
             this.ClientSize = new System.Drawing.Size(780, 660);
@@ -393,6 +397,7 @@ namespace GestionIncidenciasCopilot.Formularios
             this.Name = "FrmDetalle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Detalle de incidencia";
+            this.Load += new System.EventHandler(this.FrmDetalle_Load);
             this.panelEncabezado.ResumeLayout(false);
             this.panelEncabezado.PerformLayout();
             this.panelContenido.ResumeLayout(false);
@@ -401,6 +406,7 @@ namespace GestionIncidenciasCopilot.Formularios
             this.grupoEstado.PerformLayout();
             this.panelBotones.ResumeLayout(false);
             this.ResumeLayout(false);
+
         }
     }
 }

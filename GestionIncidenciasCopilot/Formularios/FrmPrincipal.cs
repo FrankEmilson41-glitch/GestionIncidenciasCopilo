@@ -361,5 +361,10 @@ namespace GestionIncidenciasCopilot.Formularios
         {
             return fechaUtc.ToString("dd/MM/yyyy HH:mm:ss 'UTC'");
         }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
