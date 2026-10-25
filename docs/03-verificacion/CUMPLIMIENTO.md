@@ -41,7 +41,10 @@ Investigar SDD antes del caso y seguir requerimientos, especificación, plan, im
 - Revisión auténtica del compañero y decisión de integración del PR en main.
 - Edición y aprobación final del informe y PowerPoint por los integrantes.
 - Creación y uso comprobable de Issues, Project y milestone si se presentan como aplicados.
-- Resolver o aceptar explícitamente el incumplimiento técnico menor de limpieza de temporales frente a spec.md.
+- Limpieza de temporales resuelta y verificada en 074a9fc. Se conserva prueba roja y verde en TEMPORALES.md.
 - Decidir con el docente si espera ejecutar Spec Kit CLI, un ciclo TDD y deploy real: el PDF los incluye como investigación y no los detalla en la lista práctica obligatoria. No inventar evidencia para cubrir esa ambigüedad.
 
 El estado verde de CI demuestra que pasan las comprobaciones existentes, no que toda la rúbrica esté completa. La pantalla de main solo con plantilla no representa la implementación de la rama feature pendiente de revisión.
+
+## Actualización posterior: corrección de temporales
+Nueve grupos pasan tras el arreglo. Esta evolución sí conserva evidencia de prueba fallida antes de la corrección y prueba aprobada después. No cambia el hecho de que las pruebas de la aplicación base se escribieron posteriormente al código. Los pendientes de revisión del compañero y edición final continúan.

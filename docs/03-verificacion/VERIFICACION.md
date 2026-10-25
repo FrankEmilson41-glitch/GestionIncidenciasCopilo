@@ -25,6 +25,6 @@ Esto no acredita automáticamente las ejecuciones de commits posteriores. El wor
 
 Título vacío rechazado. Alta de la incidencia DEMO SDD - Error al iniciar sesion con prioridad Alta. Edición conservó ID y creación. Transiciones Pendiente a EnProceso y EnProceso a Resuelta. Búsqueda por descripción sin distinguir mayúsculas. Filtros combinados y lista sin coincidencias. Reinicio conservó ID, prioridad, estado y fechas. Las capturas son reales. La del PR corresponde a una fase anterior con la comprobación aún ejecutándose.
 
-## Límite frente a la especificación
+## Corrección posterior del límite frente a la especificación
 
-La limpieza del temporal cuando falla la promoción del archivo no está implementada en todos los caminos. El destino original queda protegido, pero el contrato de limpieza no está plenamente satisfecho. Registrar una prueba negativa y una corrección posterior. No declarar conformidad total con spec.md mientras persista.
+Corregido en 074a9fc: se elimina el temporal creado por esta operación mediante finally sin ocultar el error original. Copilot generó primero la prueba de bloqueo y se conservó la ejecución fallida. Codex completó la implementación tras el fallo de control remoto. Los nueve grupos pasan. Consultar TEMPORALES.md. Si el sistema operativo impide también eliminar el temporal, el error de limpieza no sustituye el error original.

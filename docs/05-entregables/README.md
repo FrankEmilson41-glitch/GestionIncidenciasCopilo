@@ -19,3 +19,5 @@ Los archivos de esta carpeta son una **base para edición por los integrantes**,
 6. Conservar distinción entre SDD aplicado, Spec Kit investigado y TDD estudiado. No afirmar CLI de Spec Kit, despliegue productivo ni TDD completo ejecutados.
 
 El informe debe incluir introducción, temas, análisis crítico, propuesta para la empresa, conclusiones y referencias. La presentación debe mantener entre 8 y 12 diapositivas y demostrar el caso práctico. El diseño no se modifica durante esta organización del repositorio.
+
+7. Actualizar el resultado de pruebas: la aplicación ahora tiene nueve grupos aprobados y la limpieza de temporales está corregida. Consultar ../03-verificacion/TEMPORALES.md para describir la evolución y su procedencia sin atribuciones incorrectas.

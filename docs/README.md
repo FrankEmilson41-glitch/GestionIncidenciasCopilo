@@ -12,6 +12,7 @@
 - [Matriz contra el PDF y las indicaciones del docente](03-verificacion/CUMPLIMIENTO.md).
 - [Compilación, pruebas y Actions](03-verificacion/VERIFICACION.md).
 - [Capturas y salida de pruebas](03-verificacion/evidencias).
+- [Corrección de temporales y prueba roja/verde](03-verificacion/TEMPORALES.md).
 - [Bitácora de procedencia y commits](EVIDENCIAS.md).
 
 ## 4. Trabajo en equipo

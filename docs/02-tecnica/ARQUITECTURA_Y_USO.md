@@ -24,7 +24,7 @@ Estados permitidos: Pendiente a EnProceso, EnProceso a Resuelta y Resuelta a EnP
 
 Archivo: `%LOCALAPPDATA%/GestionIncidenciasCopilot/incidencias.xml`. Ausencia inicia una colección vacía. Corrupción o formato no admitido informa error y bloquea escritura. Se escribe un temporal y se promueve mediante Move o File.Replace. Los cambios se confirman en memoria después de guardar.
 
-No editar el XML mientras la aplicación está abierta. El prototipo es de una sola instancia local, sin autenticación. La limpieza de temporales tras algunos fallos sigue siendo una mejora técnica frente al contrato de spec.md.
+No editar el XML mientras la aplicación está abierta. El prototipo es de una sola instancia local, sin autenticación. La limpieza de temporales propios tras fallos se corrigió en 074a9fc y cuenta con una prueba de destino bloqueado. Si el propio borrado no es posible, se mantiene el error original del guardado.
 
 ## Configuración verificada
 

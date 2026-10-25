@@ -44,7 +44,7 @@ El verificador retorna 0 al aprobar y 1 ante fallos. No usa Test Explorer ni `do
 
 ## Estado verificado al 25 de octubre de 2026
 
-Aplicación compilada y recorridos manuales verificados en Release. Ocho grupos de aserciones aprobados. [Actions verificado](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/actions/runs/40164956737). [PR #1 en borrador](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/pull/1).
+Aplicación compilada y recorridos manuales verificados en Release. Nueve grupos de aserciones aprobados tras la corrección de temporales. [Actions verificado](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/actions/runs/40164956737). [PR #1 en borrador](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/pull/1).
 
 La implementación está en `feature/gestor-incidencias`. `main` conserva la línea base hasta integrar la revisión. La revisión real del compañero no se ha realizado. Consultar la matriz de cumplimiento antes de afirmar que terminó toda la entrega.
 
@@ -53,3 +53,6 @@ La implementación está en `feature/gestor-incidencias`. `main` conserva la lí
 Copilot Agent dentro de Visual Studio generó especificaciones, código, formularios, pruebas y workflow mediante solicitudes sucesivas. La plantilla inicial la creó el estudiante. Codex coordinó, operó Visual Studio, verificó y preparó documentación y archivos operativos. El historial del chat permanece en el entorno local. No se exporta una conversación inventada.
 
 Se investigó GitHub Spec Kit, sin ejecutar su CLI. Las pruebas se escribieron después de la aplicación, por lo que no se acredita un ciclo TDD completo. El repositorio es público según la consulta de GitHub del 25 de octubre. No incluye credenciales ni datos personales de ejecución.
+
+### Corrección de temporales
+Copilot generó una prueba negativa antes de modificar la persistencia. Se ejecutó y falló por el temporal sobrante (ead1743). Tras perder control remoto de Windows, Codex implementó la limpieza en Datos y los nueve grupos pasaron (074a9fc). Consultar [registro rojo/verde](docs/03-verificacion/TEMPORALES.md).

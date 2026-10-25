@@ -10,6 +10,6 @@ Este documento define tareas concretas. No acredita creación de recursos remoto
 | Revisar código en PR #1 | Compañero registra revisión auténtica y resuelve observaciones | Pendiente |
 | Corregir informe y presentación | APA 7, 8-12 diapositivas y cuatro reflexiones exactas | Edición final por el usuario |
 | Crear Project Kanban y milestone | Vincular issues, PR y evidencias | Pendiente de creación remota |
-| Limpiar temporales tras fallos de persistencia | Prueba negativa antes del cambio y protección del destino | Mejora técnica pendiente |
+| Limpiar temporales tras fallos de persistencia | Prueba negativa antes del cambio y protección del destino | Corregido y verificado localmente en 074a9fc |
 
 Columnas propuestas: Pendiente, En curso, En revisión, Terminado. Marcar Terminado solo con evidencia, no por haberse creado el issue. No asignar contribuciones ni revisiones ficticias.
