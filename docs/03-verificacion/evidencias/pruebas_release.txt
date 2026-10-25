@@ -1,0 +1,10 @@
+[OK] Alta, límites y enums
+[OK] Edición conserva ID y fechas UTC
+[OK] Transiciones válidas e inválidas
+[OK] Búsqueda y filtros combinados
+[OK] Clones no exponen el estado interno
+[OK] Fallo al guardar no cambia la memoria
+[OK] XML roundtrip y reemplazo seguro
+[OK] Corrupción, versión, IDs y UTC conservan archivo y bloquean guardado
+
+RESULTADO: todas las pruebas pasaron.

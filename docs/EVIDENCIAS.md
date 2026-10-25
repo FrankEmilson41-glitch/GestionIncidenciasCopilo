@@ -53,3 +53,6 @@ Las pruebas de esta implementación se escribieron después de la aplicación. N
 Se consultó Spec Kit, sin afirmar uso de su CLI.
 
 
+
+## Organización y auditoría del 25 de octubre
+Ver docs/README.md y docs/03-verificacion/CUMPLIMIENTO.md. La API confirma repositorio público y runs 40164956737 y 40164737074 success para d007240. Las menciones anteriores de privado y de ausencia de log detallado describen el estado anterior.

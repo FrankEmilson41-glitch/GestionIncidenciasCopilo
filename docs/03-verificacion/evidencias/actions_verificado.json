@@ -1,0 +1,12 @@
+{
+  "id": 40164956737,
+  "name": "build-test-package",
+  "event": "pull_request",
+  "head_branch": "feature/gestor-incidencias",
+  "head_sha": "d0072402a5204ed25672d4ee4ace6f489843ecf2",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-10-25T05:16:55Z",
+  "updated_at": "2026-10-25T05:17:26Z",
+  "html_url": "https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/actions/runs/40164956737"
+}

@@ -1,35 +1,55 @@
-# Gestor de incidencias con SDD y GitHub Copilot
+# Gestión de incidencias con SDD y GitHub Copilot
 
-Proyecto académico de Programación Avanzada en C#, 4A, Universidad Técnica de Machala.
-Integrantes: Santiago Nicolás Blacio Quimis y Frank Emilson Cárdenas Figueroa.
+Proyecto de Programación Avanzada en C#, Universidad Técnica de Machala, paralelo 4A.
+**Santiago Nicolás Blacio Quimis y Frank Emilson Cárdenas Figueroa.**
 
-## Aplicación y ejecución
-Windows Forms, C# y .NET Framework 4.7.2. Registro, edición, detalle, búsqueda por título/descripción, filtros combinados y transiciones Pendiente > EnProceso > Resuelta, con reapertura a EnProceso.
+Aplicación de escritorio Windows Forms, C# y .NET Framework 4.7.2. Registra y edita incidencias, combina búsqueda y filtros, controla estados y conserva datos en XML.
 
-Abrir GestionIncidenciasCopilot.slnx con Visual Studio 2026 y desarrollo de escritorio .NET instalado. Compilar y ejecutar GestionIncidenciasCopilot. Los tres formularios de la carpeta Formularios tienen archivos Designer editables.
+## Documentos del proyecto
 
-Datos: %LOCALAPPDATA%/GestionIncidenciasCopilot/incidencias.xml. La ausencia del archivo inicia una lista vacía. La corrupción impide el arranque y conserva el archivo. No hay login, eliminación ni sincronización entre procesos.
+| Consultar | Contenido |
+|---|---|
+| [Índice de documentación](docs/README.md) | Acceso a toda la entrega |
+| [Revisión del cumplimiento](docs/03-verificacion/CUMPLIMIENTO.md) | Qué está hecho, qué falta y evidencia |
+| [Metodología SDD](docs/01-metodologia/SDD.md) | Las seis fases indicadas por el ingeniero |
+| [Especificación original](specs/001-incidencias/requirements.md) | Requisitos, contratos, plan y tareas |
+| [Arquitectura y manual](docs/02-tecnica/ARQUITECTURA_Y_USO.md) | Entidades, controlador, datos y formularios |
+| [Flujo de Git y revisión](docs/04-gestion/FLUJO_DE_TRABAJO.md) | Ramas, PR y colaboración |
+| [Informe y presentación](docs/05-entregables/README.md) | Archivos para editar por los integrantes |
+| [Pruebas y evidencias](docs/03-verificacion/VERIFICACION.md) | Resultados locales y Actions |
 
-## Compilar y probar
+## Código
+
+- [Entidades](GestionIncidenciasCopilot/Entidades): Incidencia y enumeraciones.
+- [Controladores](GestionIncidenciasCopilot/Controladores): validaciones y reglas.
+- [Datos](GestionIncidenciasCopilot/Datos): contrato y repositorio XML.
+- [Formularios](GestionIncidenciasCopilot/Formularios): FrmPrincipal, FrmIncidencia y FrmDetalle, con diseñadores editables.
+- [Pruebas](Pruebas): consola de aserciones sin paquetes externos.
+- [Pipeline](.github/workflows/ci.yml): compilar, probar y conservar binarios Release.
+
+## Abrir y ejecutar
+
+1. Abrir `GestionIncidenciasCopilot.slnx` en Visual Studio 2026 con desarrollo de escritorio .NET y targeting pack de .NET Framework 4.7.2.
+2. Seleccionar `GestionIncidenciasCopilot` como proyecto de inicio y configuración **Release**.
+3. Ejecutar con Ctrl+F5. Los formularios se editan desde la carpeta Formularios.
+
 En una consola de desarrollador de Visual Studio, desde la raíz:
 
-    msbuild Pruebas/GestionIncidenciasCopilot.Pruebas.csproj /p:Configuration=Release /p:Platform=AnyCPU
-    .\Pruebas\bin\Release\GestionIncidenciasCopilot.Pruebas.exe
+```powershell
+msbuild Pruebas/GestionIncidenciasCopilot.Pruebas.csproj /p:Configuration=Release /p:Platform=AnyCPU
+.\Pruebas\bin\Release\GestionIncidenciasCopilot.Pruebas.exe
+```
 
-Las pruebas son una consola con aserciones propias, sin NuGet. Devuelve 0 al aprobar y 1 ante fallos. No usa xUnit, MSTest ni dotnet test.
+El verificador retorna 0 al aprobar y 1 ante fallos. No usa Test Explorer ni `dotnet test`. Datos del usuario: `%LOCALAPPDATA%/GestionIncidenciasCopilot/incidencias.xml`.
 
-## SDD y procedencia
-requirements.md define necesidades y aceptación; spec.md fija contratos y reglas; plan.md organiza capas, tareas y trazabilidad. Se revisaron antes de implementar.
+## Estado verificado al 25 de octubre de 2026
 
-GitHub Copilot Agent dentro de Visual Studio Insiders generó documentos SDD, código de aplicación, formularios, pruebas y workflow mediante solicitudes sucesivas en el chat «hola». La plantilla inicial la creó el estudiante. Codex operó la interfaz, formuló prompts, revisó cambios, ejecutó compilaciones y pruebas y registró commits. Codex redactó esta guía y el registro de evidencias.
+Aplicación compilada y recorridos manuales verificados en Release. Ocho grupos de aserciones aprobados. [Actions verificado](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/actions/runs/40164956737). [PR #1 en borrador](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/pull/1).
 
-Se consultó GitHub Spec Kit como referencia. No se afirma instalación o ejecución de su CLI. Las pruebas se generaron después del código, por lo que no se presenta la implementación como un ciclo TDD previo.
+La implementación está en `feature/gestor-incidencias`. `main` conserva la línea base hasta integrar la revisión. La revisión real del compañero no se ha realizado. Consultar la matriz de cumplimiento antes de afirmar que terminó toda la entrega.
 
-## GitHub
-main contiene plantilla y línea base SDD. feature/gestor-incidencias contiene la implementación incremental. El workflow Windows compila, prueba y genera un artefacto Release. Su archivo no demuestra ejecución remota. Publicación, PR, revisión del compañero, tablero y Actions requieren evidencia real antes de la entrega. No se simulan aprobaciones del compañero.
+## Procedencia
 
-Consultar docs/EVIDENCIAS.md.
+Copilot Agent dentro de Visual Studio generó especificaciones, código, formularios, pruebas y workflow mediante solicitudes sucesivas. La plantilla inicial la creó el estudiante. Codex coordinó, operó Visual Studio, verificó y preparó documentación y archivos operativos. El historial del chat permanece en el entorno local. No se exporta una conversación inventada.
 
-
-## Estado remoto al 25 de octubre de 2026
-Ramas main y feature/gestor-incidencias publicadas. PR #1 en borrador: https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/pull/1. Comprobaciones opcionales superadas observadas en Visual Studio. Revisión auténtica del compañero y gestión Issues/Project/milestone pendientes. Consultar docs/EVIDENCIAS.md para el registro actualizado.
+Se investigó GitHub Spec Kit, sin ejecutar su CLI. Las pruebas se escribieron después de la aplicación, por lo que no se acredita un ciclo TDD completo. El repositorio es público según la consulta de GitHub del 25 de octubre. No incluye credenciales ni datos personales de ejecución.
