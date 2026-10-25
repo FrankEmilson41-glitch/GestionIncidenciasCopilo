@@ -1,0 +1,40 @@
+name: build-test-package
+
+on:
+  push:
+    branches:
+      - main
+      - 'feature/**'
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-test-package:
+    name: build-test-package
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Build console test project
+        run: msbuild Pruebas/GestionIncidenciasCopilot.Pruebas.csproj /m /p:Configuration=Release /p:Platform=AnyCPU
+
+      - name: Run tests
+        run: .\Pruebas\bin\Release\GestionIncidenciasCopilot.Pruebas.exe
+
+      - name: Upload application release artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: GestionIncidenciasCopilot-Release
+          path: |
+            GestionIncidenciasCopilot/bin/Release/**
+            !GestionIncidenciasCopilot/bin/Release/**/*.pdb
+          if-no-files-found: error
