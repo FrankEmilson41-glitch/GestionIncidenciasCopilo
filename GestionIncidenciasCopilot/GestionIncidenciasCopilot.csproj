@@ -50,12 +50,6 @@
     <Compile Include="Datos\IRepositorioIncidencias.cs" />
     <Compile Include="Datos\RepositorioXmlIncidencias.cs" />
     <Compile Include="Entidades\Incidencia.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\FrmDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
