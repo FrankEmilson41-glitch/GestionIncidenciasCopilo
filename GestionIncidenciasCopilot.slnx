@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="GestionIncidenciasCopilot/GestionIncidenciasCopilot.csproj" />
+  <Project Path="Pruebas/GestionIncidenciasCopilot.Pruebas.csproj" />
 </Solution>
+

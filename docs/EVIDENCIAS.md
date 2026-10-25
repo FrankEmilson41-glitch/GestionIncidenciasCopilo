@@ -39,7 +39,7 @@ La compilación del listado detectó dos llamadas a un método renombrado. Copil
 ## Revisión visual
 La ventana principal abrió y mostró encabezado, búsqueda, filtros y tabla. Editar/Detalle estaban deshabilitados sin selección. A 150 % se detectó exceso de altura. Copilot agregó ajuste a WorkingArea y desplazamiento donde corresponde. Release compiló tras ese cambio.
 
-Pendiente: comprobar visualmente el ajuste final, abrir los tres diseñadores y completar alta, edición, filtros, transiciones y reinicio. Una instancia anterior bloqueó el ejecutable Debug en Visual Studio y el control remoto no encontró su ventana. No se presenta ese intento como prueba aprobada.
+Verificación manual posterior: se ejecutó Release desde Visual Studio. Se rechazó título vacío y se registró la incidencia DEMO SDD - Error al iniciar sesion con prioridad Alta. Se comprobaron detalle, transiciones Pendiente a EnProceso y EnProceso a Resuelta, edición conservando ID y fecha de creación, búsqueda por descripción sin distinguir mayúsculas, filtros combinados y lista sin coincidencias. Tras cerrar y reabrir se conservaron ID, prioridad, estado y fechas. Se guardaron capturas y salida de pruebas Release. El ajuste de altura dejó accesibles las acciones inferiores. Debug permaneció bloqueado por una instancia anterior; Release permitió completar los flujos.
 
 ## GitHub pendiente de comprobar
 Remoto privado indicado: https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo.git.
@@ -48,4 +48,5 @@ Faltan confirmación de publicación de ramas, PR, revisión auténtica del comp
 ## TDD y Spec Kit
 Las pruebas de esta implementación se escribieron después de la aplicación. No existe un ciclo rojo-verde-refactor previo documentado. Para una evolución debe definirse el nuevo criterio, generarse una prueba que falle y conservarse el resultado antes y después de implementar con Copilot.
 Se consultó Spec Kit, sin afirmar uso de su CLI.
+
 
