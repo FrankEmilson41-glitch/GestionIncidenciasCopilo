@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controladores\ControladorIncidencias.cs" />
     <Compile Include="Datos\IRepositorioIncidencias.cs" />
     <Compile Include="Datos\RepositorioXmlIncidencias.cs" />
     <Compile Include="Entidades\Incidencia.cs" />
