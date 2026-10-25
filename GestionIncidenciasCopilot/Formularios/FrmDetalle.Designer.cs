@@ -124,6 +124,7 @@ namespace GestionIncidenciasCopilot.Formularios
             this.panelContenido.Controls.Add(this.textFechaActualizacion);
             this.panelContenido.Controls.Add(this.grupoEstado);
             this.panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenido.AutoScroll = true;
             this.panelContenido.Location = new System.Drawing.Point(0, 112);
             this.panelContenido.Name = "panelContenido";
             this.panelContenido.Padding = new System.Windows.Forms.Padding(32, 24, 32, 18);
@@ -382,6 +383,7 @@ namespace GestionIncidenciasCopilot.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.botonCerrar;
             this.ClientSize = new System.Drawing.Size(780, 660);
             this.Controls.Add(this.panelContenido);
             this.Controls.Add(this.panelBotones);

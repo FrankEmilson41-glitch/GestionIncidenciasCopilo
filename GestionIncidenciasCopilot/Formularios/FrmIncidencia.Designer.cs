@@ -112,6 +112,7 @@ namespace GestionIncidenciasCopilot.Formularios
             this.panelContenido.Controls.Add(this.labelFechaActualizacion);
             this.panelContenido.Controls.Add(this.textFechaActualizacion);
             this.panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenido.AutoScroll = true;
             this.panelContenido.Location = new System.Drawing.Point(0, 112);
             this.panelContenido.Name = "panelContenido";
             this.panelContenido.Padding = new System.Windows.Forms.Padding(32, 24, 32, 18);

@@ -74,6 +74,7 @@ namespace GestionIncidenciasCopilot.Formularios
             this.panelEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelEncabezado.Location = new System.Drawing.Point(0, 0);
             this.panelEncabezado.Name = "panelEncabezado";
+            this.panelEncabezado.AutoScroll = true;
             this.panelEncabezado.Padding = new System.Windows.Forms.Padding(28, 22, 28, 18);
             this.panelEncabezado.Size = new System.Drawing.Size(1180, 116);
             this.panelEncabezado.TabIndex = 0;
@@ -128,6 +129,7 @@ namespace GestionIncidenciasCopilot.Formularios
             this.panelFiltros.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelFiltros.Location = new System.Drawing.Point(0, 116);
             this.panelFiltros.Name = "panelFiltros";
+            this.panelFiltros.AutoScroll = true;
             this.panelFiltros.Padding = new System.Windows.Forms.Padding(28, 17, 28, 17);
             this.panelFiltros.Size = new System.Drawing.Size(1180, 86);
             this.panelFiltros.TabIndex = 1;
@@ -276,6 +278,7 @@ namespace GestionIncidenciasCopilot.Formularios
             this.panelPie.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelPie.Location = new System.Drawing.Point(0, 628);
             this.panelPie.Name = "panelPie";
+            this.panelPie.AutoScroll = true;
             this.panelPie.Padding = new System.Windows.Forms.Padding(24, 12, 28, 12);
             this.panelPie.Size = new System.Drawing.Size(1180, 72);
             this.panelPie.TabIndex = 3;

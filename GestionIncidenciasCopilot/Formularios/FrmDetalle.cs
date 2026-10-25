@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using System.Xml;
@@ -19,6 +20,7 @@ namespace GestionIncidenciasCopilot.Formularios
         {
             InitializeComponent();
             PrepararFormulario();
+            Shown += AjustarAlAreaDeTrabajo;
             FormClosing += FrmDetalle_FormClosing;
         }
 
@@ -34,6 +36,20 @@ namespace GestionIncidenciasCopilot.Formularios
             _id = id;
             CargarIncidencia();
             _inicializadoParaUso = true;
+        }
+
+        private void AjustarAlAreaDeTrabajo(object sender, EventArgs e)
+        {
+            Rectangle areaTrabajo = Screen.FromControl(this).WorkingArea;
+            MinimumSize = new Size(Math.Min(MinimumSize.Width, areaTrabajo.Width),
+                Math.Min(MinimumSize.Height, areaTrabajo.Height));
+            int ancho = Math.Min(Width, areaTrabajo.Width);
+            int alto = Math.Min(Height, areaTrabajo.Height);
+            Bounds = new Rectangle(
+                areaTrabajo.Left + (areaTrabajo.Width - ancho) / 2,
+                areaTrabajo.Top + (areaTrabajo.Height - alto) / 2,
+                ancho,
+                alto);
         }
 
         private void PrepararFormulario()
@@ -172,9 +188,13 @@ namespace GestionIncidenciasCopilot.Formularios
 
         private void FrmDetalle_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (DialogResult == DialogResult.None)
+            if (_huboCambios)
             {
-                DialogResult = _huboCambios ? DialogResult.OK : DialogResult.Cancel;
+                DialogResult = DialogResult.OK;
+            }
+            else if (DialogResult == DialogResult.None)
+            {
+                DialogResult = DialogResult.Cancel;
             }
         }
 

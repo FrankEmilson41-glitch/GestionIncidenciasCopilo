@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using System.Xml;
@@ -16,6 +17,7 @@ namespace GestionIncidenciasCopilot.Formularios
         {
             InitializeComponent();
             PrepararFormulario();
+            Shown += AjustarAlAreaDeTrabajo;
         }
 
         public FrmPrincipal(ControladorIncidencias controlador)
@@ -28,6 +30,20 @@ namespace GestionIncidenciasCopilot.Formularios
 
             _controlador = controlador;
             CargarIncidencias();
+        }
+
+        private void AjustarAlAreaDeTrabajo(object sender, EventArgs e)
+        {
+            Rectangle areaTrabajo = Screen.FromControl(this).WorkingArea;
+            MinimumSize = new Size(Math.Min(MinimumSize.Width, areaTrabajo.Width),
+                Math.Min(MinimumSize.Height, areaTrabajo.Height));
+            int ancho = Math.Min(Width, areaTrabajo.Width);
+            int alto = Math.Min(Height, areaTrabajo.Height);
+            Bounds = new Rectangle(
+                areaTrabajo.Left + (areaTrabajo.Width - ancho) / 2,
+                areaTrabajo.Top + (areaTrabajo.Height - alto) / 2,
+                ancho,
+                alto);
         }
 
         private void PrepararFormulario()
