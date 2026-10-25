@@ -24,6 +24,7 @@ namespace GestionIncidenciasCopilot.Pruebas
             Ejecutar("Fallo al guardar no cambia la memoria", PruebaFalloDeGuardado);
             Ejecutar("XML roundtrip y reemplazo seguro", PruebaRoundtripYReemplazo);
             Ejecutar("Corrupción, versión, IDs y UTC conservan archivo y bloquean guardado", PruebaDatosInvalidosProtegidos);
+            Ejecutar("Reemplazo bloqueado conserva XML y limpia temporal", PruebaReemplazoBloqueadoLimpiaTemporal);
 
             Console.WriteLine();
             Console.WriteLine(_fallos == 0 ? "RESULTADO: todas las pruebas pasaron." : "RESULTADO: " + _fallos + " prueba(s) fallaron.");
@@ -202,6 +203,38 @@ namespace GestionIncidenciasCopilot.Pruebas
             }
         }
 
+        private static void PruebaReemplazoBloqueadoLimpiaTemporal()
+        {
+            using (var temporal = new DirectorioTemporal())
+            {
+                string ruta = temporal.Archivo("incidencias.xml");
+                var repositorio = new RepositorioXmlIncidencias(ruta);
+                repositorio.Cargar();
+                repositorio.Guardar(new[] { CrearIncidencia(Guid.NewGuid(), "XML original", EstadoIncidencia.Pendiente) });
+                byte[] bytesOriginales = File.ReadAllBytes(ruta);
+
+                AfirmarLanza<IOException>(delegate
+                {
+                    using (FileStream bloqueo = new FileStream(ruta, FileMode.Open, FileAccess.Read, FileShare.None))
+                    {
+                        repositorio.Guardar(new[] { CrearIncidencia(Guid.NewGuid(), "No reemplazar", EstadoIncidencia.EnProceso) });
+                    }
+                });
+
+                byte[] bytesTrasFallo;
+                using (FileStream liberado = new FileStream(ruta, FileMode.Open, FileAccess.Read, FileShare.Read))
+                using (var copia = new MemoryStream())
+                {
+                    liberado.CopyTo(copia);
+                    bytesTrasFallo = copia.ToArray();
+                }
+
+                Afirmar(bytesOriginales.SequenceEqual(bytesTrasFallo), "El XML original cambió tras fallar File.Replace.");
+                Afirmar(!Directory.GetFiles(temporal.Ruta, "incidencias.xml.tmp.*").Any(),
+                    "Quedó un temporal incidencias.xml.tmp.* después del fallo.");
+            }
+        }
+
         private static void PruebaDatosInvalidosProtegidos()
         {
             VerificarArchivoInvalido("XML corrupto", "<Incidencias", typeof(XmlException));
@@ -350,6 +383,11 @@ namespace GestionIncidenciasCopilot.Pruebas
             {
                 _ruta = Path.Combine(Path.GetTempPath(), "GestionIncidenciasCopilot.Pruebas." + Guid.NewGuid().ToString("N"));
                 Directory.CreateDirectory(_ruta);
+            }
+
+            public string Ruta
+            {
+                get { return _ruta; }
             }
 
             public string Archivo(string nombre)
