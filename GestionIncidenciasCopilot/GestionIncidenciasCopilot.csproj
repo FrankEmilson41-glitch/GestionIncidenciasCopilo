@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Datos\IRepositorioIncidencias.cs" />
+    <Compile Include="Datos\RepositorioXmlIncidencias.cs" />
     <Compile Include="Entidades\Incidencia.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
