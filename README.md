@@ -30,3 +30,6 @@ main contiene plantilla y línea base SDD. feature/gestor-incidencias contiene l
 
 Consultar docs/EVIDENCIAS.md.
 
+
+## Estado remoto al 25 de octubre de 2026
+Ramas main y feature/gestor-incidencias publicadas. PR #1 en borrador: https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/pull/1. Comprobaciones opcionales superadas observadas en Visual Studio. Revisión auténtica del compañero y gestión Issues/Project/milestone pendientes. Consultar docs/EVIDENCIAS.md para el registro actualizado.

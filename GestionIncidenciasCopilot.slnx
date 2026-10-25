@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="GestionIncidenciasCopilot/GestionIncidenciasCopilot.csproj" />
-  <Project Path="Pruebas/GestionIncidenciasCopilot.Pruebas.csproj" />
+  <Project Path="GestionIncidenciasCopilot/GestionIncidenciasCopilot.csproj" Id="38099dc2-3227-4cf2-9e2b-27fa2c19e834" />
+  <Project Path="Pruebas/GestionIncidenciasCopilot.Pruebas.csproj" Id="b729a2ef-a00a-4661-8d1e-691c6f63ff8b" />
 </Solution>
 

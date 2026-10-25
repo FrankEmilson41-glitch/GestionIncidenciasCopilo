@@ -41,9 +41,12 @@ La ventana principal abrió y mostró encabezado, búsqueda, filtros y tabla. Ed
 
 Verificación manual posterior: se ejecutó Release desde Visual Studio. Se rechazó título vacío y se registró la incidencia DEMO SDD - Error al iniciar sesion con prioridad Alta. Se comprobaron detalle, transiciones Pendiente a EnProceso y EnProceso a Resuelta, edición conservando ID y fecha de creación, búsqueda por descripción sin distinguir mayúsculas, filtros combinados y lista sin coincidencias. Tras cerrar y reabrir se conservaron ID, prioridad, estado y fechas. Se guardaron capturas y salida de pruebas Release. El ajuste de altura dejó accesibles las acciones inferiores. Debug permaneció bloqueado por una instancia anterior; Release permitió completar los flujos.
 
-## GitHub pendiente de comprobar
-Remoto privado indicado: https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo.git.
-Faltan confirmación de publicación de ramas, PR, revisión auténtica del compañero, Issues/Projects, milestone y ejecución remota de Actions. Los commits locales y el archivo YAML no acreditan esos pasos.
+## GitHub comprobado y pendientes
+Repositorio privado: https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo.
+Main y feature/gestor-incidencias se publicaron mediante Git integrado de Visual Studio.
+PR #1 en borrador: https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/pull/1.
+La vista del PR en Visual Studio mostró todas las comprobaciones opcionales superadas. La captura del PR incluida corresponde al momento previo, aún en ejecución. No se exportó un log remoto detallado.
+Pendientes: revisión auténtica del compañero, Issues, Project/Kanban y milestone. El PR no se ha fusionado.
 
 ## TDD y Spec Kit
 Las pruebas de esta implementación se escribieron después de la aplicación. No existe un ciclo rojo-verde-refactor previo documentado. Para una evolución debe definirse el nuevo criterio, generarse una prueba que falle y conservarse el resultado antes y después de implementar con Copilot.
