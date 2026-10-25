@@ -56,3 +56,9 @@ Se investigó GitHub Spec Kit, sin ejecutar su CLI. Las pruebas se escribieron d
 
 ### Corrección de temporales
 Copilot generó una prueba negativa antes de modificar la persistencia. Se ejecutó y falló por el temporal sobrante (ead1743). Tras perder control remoto de Windows, Codex implementó la limpieza en Datos y los nueve grupos pasaron (074a9fc). Consultar [registro rojo/verde](docs/03-verificacion/TEMPORALES.md).
+La aplicación WinForms .NET Framework 4.7.2 compila en Release y pasan nueve grupos de aserciones. Se verificaron registro, edición, transiciones, filtros y persistencia tras reiniciar. Dos ejecuciones de Actions para d007240 terminaron correctamente.
+
+La entrega académica aún requiere revisión del compañero, edición final del informe y presentación. La matriz distingue lo realizado de las propuestas. El usuario editará el diseño de los documentos.
+
+## Seguimiento del cierre
+[Tablero Kanban](https://github.com/users/FrankEmilson41-glitch/projects/1) y [milestone del primer parcial](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/milestone/1). Issues #2 y #3 conservan los pendientes del dúo. Issue #4 registra temporales corregidos. [Registro de gestión](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/blob/feature/gestor-incidencias/docs/04-gestion/SEGUIMIENTO_GITHUB.md). La corrección de temporales está publicada y [Actions aprobó nueve grupos](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/actions/runs/40204708554).
