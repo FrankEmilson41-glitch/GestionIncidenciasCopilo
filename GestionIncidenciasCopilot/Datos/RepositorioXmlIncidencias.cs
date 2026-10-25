@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -84,15 +84,37 @@ namespace GestionIncidenciasCopilot.Datos
             string directorio = Path.GetDirectoryName(_rutaArchivo);
             Directory.CreateDirectory(directorio);
             string rutaTemporal = _rutaArchivo + ".tmp." + Guid.NewGuid().ToString("N");
-            EscribirTemporal(rutaTemporal, documento);
+            bool temporalCreado = false;
+            try
+            {
+                EscribirTemporal(rutaTemporal, documento, ref temporalCreado);
 
-            if (File.Exists(_rutaArchivo))
-            {
-                File.Replace(rutaTemporal, _rutaArchivo, null);
+                if (File.Exists(_rutaArchivo))
+                {
+                    File.Replace(rutaTemporal, _rutaArchivo, null);
+                }
+                else
+                {
+                    File.Move(rutaTemporal, _rutaArchivo);
+                }
             }
-            else
+            finally
             {
-                File.Move(rutaTemporal, _rutaArchivo);
+                if (temporalCreado)
+                {
+                    try
+                    {
+                        File.Delete(rutaTemporal);
+                    }
+                    catch (IOException)
+                    {
+                        // La limpieza no debe ocultar el error original del guardado.
+                    }
+                    catch (UnauthorizedAccessException)
+                    {
+                        // Conservar el destino y el error original si no se puede limpiar.
+                    }
+                }
             }
         }
 
@@ -261,7 +283,7 @@ namespace GestionIncidenciasCopilot.Datos
                 new XElement("FechaActualizacionUtc", incidencia.FechaActualizacionUtc.ToString("o", CultureInfo.InvariantCulture)));
         }
 
-        private static void EscribirTemporal(string rutaTemporal, XDocument documento)
+        private static void EscribirTemporal(string rutaTemporal, XDocument documento, ref bool temporalCreado)
         {
             var configuracion = new XmlWriterSettings
             {
@@ -272,6 +294,7 @@ namespace GestionIncidenciasCopilot.Datos
 
             using (var flujo = new FileStream(rutaTemporal, FileMode.CreateNew, FileAccess.Write, FileShare.None))
             {
+                temporalCreado = true;
                 using (XmlWriter escritor = XmlWriter.Create(flujo, configuracion))
                 {
                     documento.Save(escritor);
