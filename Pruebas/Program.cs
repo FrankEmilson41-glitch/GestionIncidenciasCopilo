@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -245,9 +245,26 @@ namespace GestionIncidenciasCopilot.Pruebas
                 CrearXml(1, CrearElemento(idDuplicado, "Duplicado"), CrearElemento(idDuplicado, "Duplicado")),
                 typeof(InvalidDataException));
 
+            VerificarCampoXmlInvalido("GUID vacío", "Id", Guid.Empty.ToString("D"));
+            VerificarCampoXmlInvalido("GUID mal formado", "Id", "no-es-un-guid");
+            VerificarCampoXmlInvalido("Fecha imposible", "FechaCreacionUtc", "2025-02-30T00:00:00.0000000Z");
+            VerificarCampoXmlInvalido("Actualización anterior a creación", "FechaActualizacionUtc", "2024-12-31T23:59:59.0000000Z");
+            VerificarCampoXmlInvalido("Prioridad desconocida", "Prioridad", "Urgente");
+            VerificarCampoXmlInvalido("Estado desconocido", "Estado", "Cerrada");
+            VerificarCampoXmlInvalido("Prioridad numérica", "Prioridad", "99");
+            VerificarCampoXmlInvalido("Estado numérico", "Estado", "99");
+
             XElement fechaSinZ = CrearElemento(Guid.NewGuid(), "Fecha sin zona");
             fechaSinZ.Element("FechaCreacionUtc").Value = "2025-01-01T00:00:00.0000000";
             VerificarArchivoInvalido("Fecha UTC sin Z", CrearXml(1, fechaSinZ), typeof(InvalidDataException));
+        }
+
+        private static void VerificarCampoXmlInvalido(string nombre, string campo, string valor)
+        {
+            XElement elemento = CrearElemento(Guid.NewGuid(), nombre);
+            elemento.Element(campo).Value = valor;
+            VerificarArchivoInvalido(nombre, CrearXml(1, elemento), typeof(InvalidDataException));
+            Console.WriteLine("  [OK XML] " + nombre + ": lectura rechazada, guardado bloqueado y archivo intacto.");
         }
 
         private static void VerificarArchivoInvalido(string nombre, string contenido, Type tipoEsperado)
