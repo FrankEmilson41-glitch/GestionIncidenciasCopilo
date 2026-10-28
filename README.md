@@ -44,9 +44,9 @@ El verificador retorna 0 al aprobar y 1 ante fallos. No usa Test Explorer ni `do
 
 ## Estado verificado al 25 de octubre de 2026
 
-Aplicación compilada y recorridos manuales verificados en Release. Nueve grupos de aserciones aprobados tras la corrección de temporales. [Actions verificado](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/actions/runs/40164956737). [PR #1 en borrador](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/pull/1).
+Aplicación compilada y recorridos manuales verificados en Release. Nueve grupos de aserciones aprobados tras la corrección de temporales. [Actions verificado](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/actions/runs/40164956737). [PR #1 listo para revisión](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/pull/1).
 
-La implementación está en `feature/gestor-incidencias`. `main` conserva la línea base hasta integrar la revisión. La revisión real del compañero no se ha realizado. Consultar la matriz de cumplimiento antes de afirmar que terminó toda la entrega.
+La implementación está en `feature/gestor-incidencias`. `main` conserva la línea base hasta integrar la revisión. Se recibió evidencia de revisión técnica asistida del commit 6042e94; la decisión y publicación personal del compañero siguen pendientes. Consultar la matriz de cumplimiento antes de afirmar que terminó toda la entrega.
 
 ## Procedencia
 
@@ -62,3 +62,9 @@ La entrega académica aún requiere revisión del compañero, edición final del
 
 ## Seguimiento del cierre
 [Tablero Kanban](https://github.com/users/FrankEmilson41-glitch/projects/1) y [milestone del primer parcial](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/milestone/1). Issues #2 y #3 conservan los pendientes del dúo. Issue #4 registra temporales corregidos. [Registro de gestión](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/blob/feature/gestor-incidencias/docs/04-gestion/SEGUIMIENTO_GITHUB.md). La corrección de temporales está publicada y [Actions aprobó nueve grupos](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/actions/runs/40204708554).
+
+## Actualización de revisión — 27 de octubre de 2026
+
+Se corrigió el texto de edición y se añadieron ocho casos XML explícitos dentro de los nueve grupos. Compilación Release correcta y nueve grupos aprobados con TEMP/TMP escribible. [Registro de correcciones y evidencias](docs/03-verificacion/CIERRE_REVISION.md). [Actions del código corregido aprobado](https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/actions/runs/40631339669). El PR #1 está Ready for review, vinculado al milestone y en In review junto con Issue #2. Continúan pendientes la decisión de Santiago, integración y documentos finales; no se cierra el milestone. [Instrucciones para la revisión final de Santiago](docs/04-gestion/PARA_SANTIAGO_REVISION_FINAL.txt).
+
+Los tres diseñadores (FrmPrincipal, FrmIncidencia y FrmDetalle) cargaron en Visual Studio 2026 Insiders. Se conservan capturas y el registro en docs/03-verificacion/CIERRE_REVISION.md.
