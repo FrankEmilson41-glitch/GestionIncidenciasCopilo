@@ -36,3 +36,9 @@ Las imágenes se reservan para integrar una selección pertinente cuando Frank e
 El PR #1 se marcó Ready for review; continúa abierto y sin fusionar. El paquete previo de Santiago acreditó comprobaciones asistidas del commit 6042e94, sin aprobación publicada. Debe revisar las correcciones y decidir personalmente sobre el último commit del PR. La integración corresponde a Frank después de la revisión y checks aprobados. Issue #2 debe seguir abierto hasta concluir revisión e integración; Issue #3 hasta recibir y aprobar documentos finales. El milestone no debe cerrarse todavía.
 
 GitHub se actualizó con la sesión autorizada del navegador: el acceso a credenciales de Git desde este entorno fue denegado. Se conservaron los commits locales existentes y se sincronizaron los archivos de código con los publicados; no se reescribió historial remoto ni se forzó main.
+
+## Comprobación posterior de los diseñadores
+
+Se comprobó la solución existente en Visual Studio 2026 Insiders: FrmPrincipal, FrmIncidencia y FrmDetalle cargan sus diseñadores. Se guardaron capturas 05, 06 y 07. El error previo se observó en la instalación Community; en Insiders se comprobó la carga sin modificar código ni reinstalar componentes durante esta comprobación. Las capturas muestran el área visible del diseñador a escala de pantalla 150 %, no una exportación completa del formulario. La ejecución Release y su mensaje de edición ya están acreditados por separado.
+
+Los checks del commit documental 5c38caf807c995438462a8899b6158519ef4302f también aprobaron: runs 40632415449 y 40632410826. Deben comprobarse los commits documentales posteriores antes de integrar.
