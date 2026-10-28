@@ -1,0 +1,22 @@
+[
+  {
+    "id": 40631344382,
+    "head_sha": "563a7d6623727ba1e035aeb2531224446cc2a1ed",
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/actions/runs/40631344382",
+    "created_at": "2026-10-28T04:15:56Z",
+    "updated_at": "2026-10-28T04:16:28Z"
+  },
+  {
+    "id": 40631339669,
+    "head_sha": "563a7d6623727ba1e035aeb2531224446cc2a1ed",
+    "event": "push",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/actions/runs/40631339669",
+    "created_at": "2026-10-28T04:15:54Z",
+    "updated_at": "2026-10-28T04:16:27Z"
+  }
+]

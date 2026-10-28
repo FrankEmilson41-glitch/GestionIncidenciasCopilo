@@ -1,0 +1,7 @@
+* text=auto
+*.pdf -text
+*.pptx -text
+*.png -text
+*.jpg -text
+*.zip -text
+*.bundle -text

@@ -1,0 +1,76 @@
+Compilación iniciada a las 27/10/2026 23:11:24.
+El nivel de detalle de registro está establecido en Normal.
+     1>Proyecto "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\Pruebas\GestionIncidenciasCopilot.Pruebas.csproj" en nodo 1 (destinos predeterminados).
+     1>El proyecto "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\Pruebas\GestionIncidenciasCopilot.Pruebas.csproj" (1) está compilando "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\GestionIncidenciasCopilot\GestionIncidenciasCopilot.csproj" (2:2) en el nodo 1 (destinos predeterminados).
+     2>CoreResGen:
+         Procesando archivo de recursos "Formularios\FrmDetalle.resx" en "obj\Release\GestionIncidenciasCopilot.Formularios.FrmDetalle.resources".
+         Procesando archivo de recursos "Formularios\FrmPrincipal.resx" en "obj\Release\GestionIncidenciasCopilot.Formularios.FrmPrincipal.resources".
+         Procesando archivo de recursos "Properties\Resources.resx" en "obj\Release\GestionIncidenciasCopilot.Properties.Resources.resources".
+       CoreCompile:
+         Setting DOTNET_TieredCompilation to '0'
+         C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:1701,1702 /fullpaths /nostdlib+ /platform:anycpu32bitpreferred /errorreport:prompt /warn:4 /define:TRACE /highentropyva+ /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\GestionIncidenciasCopilot.exe /subsystemversion:6.00 /resource:obj\Release\GestionIncidenciasCopilot.Formularios.FrmDetalle.resources /resource:obj\Release\GestionIncidenciasCopilot.Formularios.FrmPrincipal.resources /resource:obj\Release\GestionIncidenciasCopilot.Properties.Resources.resources /target:winexe /utf8output /deterministic+ /langversion:7.3 Controladores\ControladorIncidencias.cs Datos\IRepositorioIncidencias.cs Datos\RepositorioXmlIncidencias.cs Entidades\Incidencia.cs Formularios\FrmDetalle.cs Formularios\FrmDetalle.Designer.cs Formularios\FrmIncidencia.cs Formularios\FrmIncidencia.Designer.cs Formularios\FrmPrincipal.cs Formularios\FrmPrincipal.Designer.cs Program.cs Properties\AssemblyInfo.cs Properties\Resources.Designer.cs Properties\Settings.Designer.cs "obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs"
+         Compilation request GestionIncidenciasCopilot, PathToTool=C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\Roslyn\csc.exe
+         CommandLine = ' /noconfig'
+         BuildResponseFile = '/nowarn:1701,1702 /fullpaths /nostdlib+ /platform:anycpu32bitpreferred /errorreport:prompt /warn:4 /define:TRACE /highentropyva+ /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\GestionIncidenciasCopilot.exe /subsystemversion:6.00 /resource:obj\Release\GestionIncidenciasCopilot.Formularios.FrmDetalle.resources /resource:obj\Release\GestionIncidenciasCopilot.Formularios.FrmPrincipal.resources /resource:obj\Release\GestionIncidenciasCopilot.Properties.Resources.resources /target:winexe /utf8output /deterministic+ /langversion:7.3 Controladores\ControladorIncidencias.cs Datos\IRepositorioIncidencias.cs Datos\RepositorioXmlIncidencias.cs Entidades\Incidencia.cs Formularios\FrmDetalle.cs Formularios\FrmDetalle.Designer.cs Formularios\FrmIncidencia.cs Formularios\FrmIncidencia.Designer.cs Formularios\FrmPrincipal.cs Formularios\FrmPrincipal.Designer.cs Program.cs Properties\AssemblyInfo.cs Properties\Resources.Designer.cs Properties\Settings.Designer.cs "obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs"'
+         Attempting to create process 'C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\Roslyn\VBCSCompiler.exe' "-pipename:ymaexSFWQm+Dr26E0D79lH6CZNkyo0ShchdjXs1Q1VU"
+         Setting DOTNET_TieredCompilation to '0'
+         Successfully created process with process id 26824
+         Attempt to open named pipe 'ymaexSFWQm+Dr26E0D79lH6CZNkyo0ShchdjXs1Q1VU'
+         Attempt to connect named pipe 'ymaexSFWQm+Dr26E0D79lH6CZNkyo0ShchdjXs1Q1VU'
+         Exception: 'TimeoutException' 'Se excedió el tiempo de espera de la operación.' occurred during 'Connecting to server timed out after 20000 ms'
+         Stack trace:
+            en System.IO.Pipes.NamedPipeClientStream.ConnectInternal(Int32 timeout, CancellationToken cancellationToken, Int32 startTime)
+            en System.IO.Pipes.NamedPipeClientStream.<>c__DisplayClass21_0.<ConnectAsync>b__0()
+            en System.Threading.Tasks.Task.InnerInvoke()
+            en System.Threading.Tasks.Task.Execute()
+         --- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+            en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+            en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+            en Microsoft.CodeAnalysis.CommandLine.BuildServerConnection.<TryConnectToServerAsync>d__13.MoveNext()
+         
+         CompilerServer: server failed - cannot connect to the server - GestionIncidenciasCopilot
+       _CopyAppConfigFile:
+       Se omitirá el destino "_CopyAppConfigFile" porque todos los archivos de salida están actualizados respecto a los archivos de entrada.
+       CopyFilesToOutputDirectory:
+         Copiando el archivo de "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\GestionIncidenciasCopilot\obj\Release\GestionIncidenciasCopilot.exe" en "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\GestionIncidenciasCopilot\bin\Release\GestionIncidenciasCopilot.exe".
+         GestionIncidenciasCopilot -> C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\GestionIncidenciasCopilot\bin\Release\GestionIncidenciasCopilot.exe
+         Copiando el archivo de "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\GestionIncidenciasCopilot\obj\Release\GestionIncidenciasCopilot.pdb" en "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\GestionIncidenciasCopilot\bin\Release\GestionIncidenciasCopilot.pdb".
+     2>Compilación del proyecto terminada "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\GestionIncidenciasCopilot\GestionIncidenciasCopilot.csproj" (destinos predeterminados).
+     1>CoreCompile:
+         Setting DOTNET_TieredCompilation to '0'
+         C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:1701,1702 /fullpaths /nostdlib+ /platform:anycpu32bitpreferred /errorreport:prompt /warn:4 /define:TRACE /highentropyva+ /reference:C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\GestionIncidenciasCopilot\bin\Release\GestionIncidenciasCopilot.exe /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\GestionIncidenciasCopilot.Pruebas.exe /subsystemversion:6.00 /target:exe /utf8output /deterministic+ /langversion:7.3 Program.cs "obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs"
+         Compilation request GestionIncidenciasCopilot.Pruebas, PathToTool=C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\Roslyn\csc.exe
+         CommandLine = ' /noconfig'
+         BuildResponseFile = '/nowarn:1701,1702 /fullpaths /nostdlib+ /platform:anycpu32bitpreferred /errorreport:prompt /warn:4 /define:TRACE /highentropyva+ /reference:C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\GestionIncidenciasCopilot\bin\Release\GestionIncidenciasCopilot.exe /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\GestionIncidenciasCopilot.Pruebas.exe /subsystemversion:6.00 /target:exe /utf8output /deterministic+ /langversion:7.3 Program.cs "obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs"'
+         Attempting to create process 'C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\Roslyn\VBCSCompiler.exe' "-pipename:ymaexSFWQm+Dr26E0D79lH6CZNkyo0ShchdjXs1Q1VU"
+         Setting DOTNET_TieredCompilation to '0'
+         Successfully created process with process id 14712
+         Attempt to open named pipe 'ymaexSFWQm+Dr26E0D79lH6CZNkyo0ShchdjXs1Q1VU'
+         Attempt to connect named pipe 'ymaexSFWQm+Dr26E0D79lH6CZNkyo0ShchdjXs1Q1VU'
+         Exception: 'TimeoutException' 'Se excedió el tiempo de espera de la operación.' occurred during 'Connecting to server timed out after 20000 ms'
+         Stack trace:
+            en System.IO.Pipes.NamedPipeClientStream.ConnectInternal(Int32 timeout, CancellationToken cancellationToken, Int32 startTime)
+            en System.IO.Pipes.NamedPipeClientStream.<>c__DisplayClass21_0.<ConnectAsync>b__0()
+            en System.Threading.Tasks.Task.InnerInvoke()
+            en System.Threading.Tasks.Task.Execute()
+         --- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+            en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+            en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+            en Microsoft.CodeAnalysis.CommandLine.BuildServerConnection.<TryConnectToServerAsync>d__13.MoveNext()
+         
+         CompilerServer: server failed - cannot connect to the server - GestionIncidenciasCopilot.Pruebas
+       _CopyFilesMarkedCopyLocal:
+         Copiando el archivo de "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\GestionIncidenciasCopilot\bin\Release\GestionIncidenciasCopilot.pdb" en "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\Pruebas\bin\Release\GestionIncidenciasCopilot.pdb".
+         Copiando el archivo de "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\GestionIncidenciasCopilot\bin\Release\GestionIncidenciasCopilot.exe" en "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\Pruebas\bin\Release\GestionIncidenciasCopilot.exe".
+       CopyFilesToOutputDirectory:
+         Copiando el archivo de "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\Pruebas\obj\Release\GestionIncidenciasCopilot.Pruebas.exe" en "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\Pruebas\bin\Release\GestionIncidenciasCopilot.Pruebas.exe".
+         GestionIncidenciasCopilot.Pruebas -> C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\Pruebas\bin\Release\GestionIncidenciasCopilot.Pruebas.exe
+         Aplicando tarea Touch a "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\Pruebas\obj\Release\GestionI.8E230B66.Up2Date".
+         Copiando el archivo de "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\Pruebas\obj\Release\GestionIncidenciasCopilot.Pruebas.pdb" en "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\Pruebas\bin\Release\GestionIncidenciasCopilot.Pruebas.pdb".
+     1>Compilación del proyecto terminada "C:\Users\Emilson\source\repos\GestionIncidenciasCopilot\Pruebas\GestionIncidenciasCopilot.Pruebas.csproj" (destinos predeterminados).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:44.16

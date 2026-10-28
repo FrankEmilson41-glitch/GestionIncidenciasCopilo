@@ -1,0 +1,75 @@
+{
+  "fecha_indice_utc": "2026-10-28T04:23:23.300017+00:00",
+  "commit_codigo": "563a7d6623727ba1e035aeb2531224446cc2a1ed",
+  "nota": "Capturas reales de UI y logs originales. Las fechas son metadatos de archivo en UTC; no representan nuevas ejecuciones. Primer intento fallido y segundo aprobado conservados. Captura del PR previa a cambiar su estado del tablero a In review.",
+  "archivos": [
+    {
+      "archivo": "01-edicion-corregida.png",
+      "bytes": 80699,
+      "sha256": "1e24d8e99f022c9fd1c47d7a0265e856dc4bff0f58c175a15935b8febeba7863",
+      "archivo_modificado_utc": "2026-10-28T04:19:04.072750+00:00"
+    },
+    {
+      "archivo": "02-pr-listo.jpg",
+      "bytes": 141138,
+      "sha256": "bd88486ee051a5c164a3f53c15ad93704cdaadd05c77714456c6511c546712df",
+      "archivo_modificado_utc": "2026-10-28T04:21:48.832565+00:00"
+    },
+    {
+      "archivo": "03-actions-codigo.jpg",
+      "bytes": 60054,
+      "sha256": "15e160909bbb265a33d201fdf4f555cfca297806201d8e5293b2fd48106b3990",
+      "archivo_modificado_utc": "2026-10-28T04:21:57.923050+00:00"
+    },
+    {
+      "archivo": "04-seguimiento.jpg",
+      "bytes": 106193,
+      "sha256": "c4fc7a80d823abfdc61b8f70d68284c78fbd74649ca42c9b451ecb5cb59756f2",
+      "archivo_modificado_utc": "2026-10-28T04:22:31.875813+00:00"
+    },
+    {
+      "archivo": "05-disenador-principal.png",
+      "bytes": 112975,
+      "sha256": "1e9a0f3efdb3ba6687aea4451322741b0885c49d4dc8c591065be0437c7e419a",
+      "archivo_modificado_utc": "2026-10-28T04:30:01.225625+00:00"
+    },
+    {
+      "archivo": "06-disenador-incidencia.png",
+      "bytes": 125769,
+      "sha256": "4b33de4b0aaddc17b735447e66be0f40c00b277f6d4803825567ab5fa0f8a99a",
+      "archivo_modificado_utc": "2026-10-28T04:30:11.508536+00:00"
+    },
+    {
+      "archivo": "07-disenador-detalle.png",
+      "bytes": 125612,
+      "sha256": "a96d7e9038e98f12e9203ae7136b595767051f6c4c4446c493d1e8cd6d21d1ab",
+      "archivo_modificado_utc": "2026-10-28T04:30:52.211326+00:00"
+    },
+    {
+      "archivo": "ci-codigo.json",
+      "bytes": 755,
+      "sha256": "658acc5f44d238d1e0aaa53e8a7322d4e60bb3fbfdb91a1b7d21cb15e9c6307a",
+      "archivo_modificado_utc": "2026-10-28T04:21:23.593442+00:00"
+    },
+    {
+      "archivo": "compilacion.txt",
+      "bytes": 14846,
+      "sha256": "dadd235489a0e2ec11361c1d3db44708ef04e3f6505eee29bd7934af08de0018",
+      "archivo_modificado_utc": "2026-10-28T04:12:09.024973+00:00"
+    },
+    {
+      "archivo": "pruebas-temp-predeterminado.txt",
+      "bytes": 1307,
+      "sha256": "d9a6526f6e1ac0eb9104b17395784abb554765ee6ffa8c74717c5462b2dd4870",
+      "archivo_modificado_utc": "2026-10-28T04:12:11.309047+00:00"
+    },
+    {
+      "archivo": "pruebas.txt",
+      "bytes": 1178,
+      "sha256": "715e89e5903279c23dadf5c269b9388c02b093955765629ba41e674f583b05c4",
+      "archivo_modificado_utc": "2026-10-28T04:12:39.863542+00:00"
+    }
+  ],
+  "actualizacion_utc": "2026-10-28T04:30:56.113468+00:00",
+  "nota_disenadores": "Capturas 05,06,07: carga real de los tres diseñadores en Visual Studio 2026 Insiders, sin cambios de código. Ventanas visibles parcialmente por escala 150 %."
+}
