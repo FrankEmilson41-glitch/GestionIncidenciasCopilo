@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -81,7 +81,7 @@ namespace GestionIncidenciasCopilot.Formularios
             Incidencia incidencia = _controlador.ObtenerPorId(_id.Value);
             Text = "Editar incidencia";
             labelEncabezado.Text = "Editar incidencia";
-            labelSubtitulo.Text = "Actualiza los datos; el estado y las fechas se conservan.";
+            labelSubtitulo.Text = "Se conservan el estado y la creación; la actualización cambia al guardar.";
             textTitulo.Text = incidencia.Titulo;
             textDescripcion.Text = incidencia.Descripcion;
             comboPrioridad.SelectedItem = incidencia.Prioridad;
