@@ -28,6 +28,24 @@
       "archivo_modificado_utc": "2026-10-28T04:22:31.875813+00:00"
     },
     {
+      "archivo": "05-disenador-principal.png",
+      "bytes": 112975,
+      "sha256": "1e9a0f3efdb3ba6687aea4451322741b0885c49d4dc8c591065be0437c7e419a",
+      "archivo_modificado_utc": "2026-10-28T04:30:01.225625+00:00"
+    },
+    {
+      "archivo": "06-disenador-incidencia.png",
+      "bytes": 125769,
+      "sha256": "4b33de4b0aaddc17b735447e66be0f40c00b277f6d4803825567ab5fa0f8a99a",
+      "archivo_modificado_utc": "2026-10-28T04:30:11.508536+00:00"
+    },
+    {
+      "archivo": "07-disenador-detalle.png",
+      "bytes": 125612,
+      "sha256": "a96d7e9038e98f12e9203ae7136b595767051f6c4c4446c493d1e8cd6d21d1ab",
+      "archivo_modificado_utc": "2026-10-28T04:30:52.211326+00:00"
+    },
+    {
       "archivo": "ci-codigo.json",
       "bytes": 755,
       "sha256": "658acc5f44d238d1e0aaa53e8a7322d4e60bb3fbfdb91a1b7d21cb15e9c6307a",
@@ -51,5 +69,7 @@
       "sha256": "715e89e5903279c23dadf5c269b9388c02b093955765629ba41e674f583b05c4",
       "archivo_modificado_utc": "2026-10-28T04:12:39.863542+00:00"
     }
-  ]
+  ],
+  "actualizacion_utc": "2026-10-28T04:30:56.113468+00:00",
+  "nota_disenadores": "Capturas 05,06,07: carga real de los tres diseñadores en Visual Studio 2026 Insiders, sin cambios de código. Ventanas visibles parcialmente por escala 150 %."
 }
