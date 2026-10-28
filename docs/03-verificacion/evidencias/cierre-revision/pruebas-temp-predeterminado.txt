@@ -1,0 +1,19 @@
+[OK] Alta, límites y enums
+[OK] Edición conserva ID y fechas UTC
+[OK] Transiciones válidas e inválidas
+[OK] Búsqueda y filtros combinados
+[OK] Clones no exponen el estado interno
+[OK] Fallo al guardar no cambia la memoria
+[FALLO] XML roundtrip y reemplazo seguro — UnauthorizedAccessException: Acceso denegado a la ruta de acceso.
+  [OK XML] GUID vacío: lectura rechazada, guardado bloqueado y archivo intacto.
+  [OK XML] GUID mal formado: lectura rechazada, guardado bloqueado y archivo intacto.
+  [OK XML] Fecha imposible: lectura rechazada, guardado bloqueado y archivo intacto.
+  [OK XML] Actualización anterior a creación: lectura rechazada, guardado bloqueado y archivo intacto.
+  [OK XML] Prioridad desconocida: lectura rechazada, guardado bloqueado y archivo intacto.
+  [OK XML] Estado desconocido: lectura rechazada, guardado bloqueado y archivo intacto.
+  [OK XML] Prioridad numérica: lectura rechazada, guardado bloqueado y archivo intacto.
+  [OK XML] Estado numérico: lectura rechazada, guardado bloqueado y archivo intacto.
+[OK] Corrupción, versión, IDs y UTC conservan archivo y bloquean guardado
+[FALLO] Reemplazo bloqueado conserva XML y limpia temporal — UnauthorizedAccessException: Acceso denegado a la ruta de acceso.
+
+RESULTADO: 2 prueba(s) fallaron.
