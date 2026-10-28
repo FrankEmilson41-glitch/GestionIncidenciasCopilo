@@ -48,3 +48,10 @@ El estado verde de CI demuestra que pasan las comprobaciones existentes, no que 
 
 ## Actualización posterior: corrección de temporales
 Nueve grupos pasan tras el arreglo. Esta evolución sí conserva evidencia de prueba fallida antes de la corrección y prueba aprobada después. No cambia el hecho de que las pruebas de la aplicación base se escribieron posteriormente al código. Los pendientes de revisión del compañero y edición final continúan.
+
+## Actualización de gestión remota
+Issues #2 a #5, Project Kanban y milestone #1 creados y vinculados. La corrección de temporales está publicada y CI aprobó nueve grupos en 61fa095. La revisión del compañero y edición final de documentos siguen pendientes. [Enlaces y estados actuales](../04-gestion/SEGUIMIENTO_GITHUB.md). Esta actualización sustituye las menciones anteriores que indicaban falta de creación remota.
+
+## Cierre parcial del 27 de octubre de 2026
+
+PR #1 fuera de borrador y listo para revisión. Paquete técnico de Santiago recibido y examinado; todavía no contiene su aprobación publicada. Se atendieron las tres observaciones: texto de edición, ocho casos XML y descripción del PR. Release correcto y nueve grupos aprobados; Actions del código 563a7d6 aprobado. [Evidencia y límites](CIERRE_REVISION.md). Issue #2 y PR en In review, ambos vinculados al milestone; Issue #3 sigue abierto y el milestone también. Frank entregará después los documentos finales. Esto actualiza los estados históricos anteriores sin atribuir trabajo o aprobación no realizados.
