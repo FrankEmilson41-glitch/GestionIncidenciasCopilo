@@ -1,0 +1,22 @@
+Soy Santiago Nicolás Blacio Quimis. Necesito continuar la revisión del proyecto de Frank, con mi cuenta y en mi equipo.
+
+Repositorio: https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo
+PR: https://github.com/FrankEmilson41-glitch/GestionIncidenciasCopilo/pull/1
+Rama: feature/gestor-incidencias → main.
+
+Mi paquete anterior PARA_FRANK_PR1_COMPLETO.zip comprobó el commit 6042e94 y no publicó una aprobación ni cambió código. Frank atendió las tres observaciones: amplió pruebas XML en a787593, corrigió el mensaje de edición en 563a7d6 y actualizó la descripción. Actions push 40631339669 y pull_request 40631344382 aprobaron el commit 563a7d6623727ba1e035aeb2531224446cc2a1ed. El PR ya salió de borrador. Habrá commits posteriores de evidencia: comprueba siempre el último SHA actual y sus checks.
+
+Ayúdame paso a paso:
+
+1. Abre el PR y comprueba que uso mi propia cuenta. Lee su estado actual: abierto, sin fusionar y Ready for review. Si cambió, informa el estado real. No crees otro repositorio ni otro PR.
+2. Localiza mi copia. Conserva cambios locales. Actualiza de origin la rama feature/gestor-incidencias sin reset --hard, force push ni borrar trabajo. Si no hay copia, clona el repositorio en una carpeta nueva y abre GestionIncidenciasCopilot.slnx.
+3. Lee specs/001-incidencias/requirements.md, spec.md, plan.md y docs/03-verificacion/CIERRE_REVISION.md. Compara mis observaciones anteriores con el código nuevo, especialmente FrmIncidencia.cs y Pruebas/Program.cs. Explícame lo que cambió.
+4. Compila el proyecto Pruebas/GestionIncidenciasCopilot.Pruebas.csproj en Release con Visual Studio/MSBuild y ejecuta Pruebas/bin/Release/GestionIncidenciasCopilot.Pruebas.exe. Son nueve grupos de consola, no dotnet test. Guarda salida y exit code. Dentro del grupo XML deben aparecer ocho OK XML adicionales. Verifica que cada caso rechace la carga, bloquee Guardar y conserve el archivo. No cambies código para conseguir pruebas verdes. Si el TEMP predeterminado impide reemplazar archivos, conserva el fallo y repite con TEMP/TMP en una carpeta local escribible solo para esa ejecución; documenta ambos intentos.
+5. Abre la aplicación y comprueba la edición. El encabezado debe indicar que se conserva estado y creación, mientras actualización cambia al guardar. Con datos de prueba, confirma ID/creación conservados y actualización coherente. Conserva los datos existentes; no los sobrescribas ni los publiques. Comprueba brevemente filtros, estados y persistencia. Si algún diseñador falla, distingue ese problema de la ejecución y descríbelo; no afirmes que abriste los tres diseñadores si no lo hiciste.
+6. Comprueba los checks del último SHA del PR en GitHub Actions, no solo las ejecuciones históricas citadas. Si se añade código después de revisar, vuelve a evaluar los cambios pertinentes.
+7. Toma capturas reales y legibles: resultado de compilación, pruebas completas (con salida y código de retorno en registro), mensaje de edición corregido, checks del SHA revisado y revisión publicada, si yo autorizo publicarla. Guarda originales sin anotaciones falsas, con nombres, fecha UTC y SHA en un índice. Nunca fabriques una consola a partir de texto. Si no puedes capturar, conserva los logs y explica la limitación.
+8. Preséntame resultados y diferencias: comprobado, no comprobado, observaciones resueltas y pendientes. Muéstrame un borrador breve de revisión que pueda comprender y sostener. No atribuyas mi decisión a la IA.
+9. Espera mi decisión antes de publicar. Si estoy conforme y autorizo, abre Files changed → Review changes, escribe la revisión y selecciona Approve; si quedan errores relevantes, Request changes o Comment según corresponda. Si no permite aprobar por acceso, explica el mensaje exacto sin cambiar permisos ni usar la cuenta de Frank. No fusiones el PR: Frank realizará la integración después de revisar mi decisión y los checks.
+10. Entrégame para Frank un ZIP con RESUMEN_PARA_FRANK.md, SHA completo revisado, comandos/resultados/exit codes, capturas originales e índice con fechas UTC, observaciones, enlace de la revisión publicada (o indicar que no se publicó), archivos modificados y commits si existieran. Incluye manifiesto SHA-256. No envíes credenciales, datos personales de ejecución ni carpetas bin/obj. No afirmes que el proyecto académico está cerrado: Frank entregará después el informe y PowerPoint finales.
+
+Empieza por el estado actual del PR y dime qué debo revisar personalmente.
